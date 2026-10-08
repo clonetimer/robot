@@ -1,0 +1,4 @@
+Acceptance summary:
+  A0: PASS  metric=4.36482362338e-16
+  A1: PASS  metric=0.000205783809114
+  A2: PASS  metric=0.362134070376

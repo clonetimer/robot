@@ -1,0 +1,4 @@
+criterion,metric,threshold_or_comparison,pass
+A0,4.36482362338e-16,<1e-10,PASS
+A1,0.000205783809114,<0.05,PASS
+A2,0.362134070376,<1 deg and < nominal(0.700882529623 deg),PASS

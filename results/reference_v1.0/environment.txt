@@ -1,0 +1,11 @@
+Acceptance date: 2026-09-10
+Project release: 1.0.0
+Requirements baseline: v0.2
+OS: Debian GNU/Linux 13 (trixie)
+Architecture: x86_64
+Kernel: 6.18.35
+GCC: g++ (Debian 14.2.0-19) 14.2.0
+CMake: cmake version 3.31.6
+glibc: ldd (Debian GLIBC 2.41-12+deb13u3) 2.41
+Pinocchio prefix: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix
+Pinocchio bundle SHA-256: 992bfe97a5be6f7a60608bf7bb2e928e0950fc1b9c80d29c84359ab31edd0735

@@ -1,0 +1,17 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- coal FOUND. coal at /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix/lib/libcoal.so
+-- Default C++ standard: 201703
+-- Minimal C++ standard upgraded to 14
+-- C++ standard sufficient: Minimal required 14, currently defined: 17
+-- Minimal C++ standard upgraded to 17
+-- C++ standard sufficient: Minimal required 17, currently defined: 17
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /mnt/data/robot_dynamics_id_ctc_v1.0/build_acceptance

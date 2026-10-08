@@ -1,0 +1,26 @@
+[ 17%] Built target robot_id_core
+[ 25%] Built target test_trajectory_limits
+[ 32%] Built target test_scaled_svd
+[ 39%] Built target test_nominal_mismatch
+[ 46%] Built target test_deterministic_noise
+[ 50%] Building CXX object CMakeFiles/robot_id.dir/src/robot_model.cpp.o
+[ 53%] Building CXX object CMakeFiles/robot_id.dir/src/pinocchio_model_loader.cpp.o
+[ 57%] Building CXX object CMakeFiles/robot_id.dir/src/identification.cpp.o
+[ 60%] Building CXX object CMakeFiles/robot_id.dir/src/experiment.cpp.o
+[ 64%] Linking CXX static library librobot_id.a
+[ 64%] Built target robot_id
+[ 67%] Building CXX object CMakeFiles/robot_id_demo.dir/src/main.cpp.o
+[ 71%] Linking CXX executable robot_id_demo
+[ 71%] Built target robot_id_demo
+[ 75%] Building CXX object CMakeFiles/test_model_contract.dir/tests/test_model_contract.cpp.o
+[ 78%] Linking CXX executable test_model_contract
+[ 78%] Built target test_model_contract
+[ 82%] Building CXX object CMakeFiles/test_regressor_identity.dir/tests/test_regressor_identity.cpp.o
+[ 85%] Linking CXX executable test_regressor_identity
+[ 85%] Built target test_regressor_identity
+[ 89%] Building CXX object CMakeFiles/test_identification_pipeline.dir/tests/test_identification_pipeline.cpp.o
+[ 92%] Linking CXX executable test_identification_pipeline
+[ 92%] Built target test_identification_pipeline
+[ 96%] Building CXX object CMakeFiles/test_runtime_guardrails.dir/tests/test_runtime_guardrails.cpp.o
+[100%] Linking CXX executable test_runtime_guardrails
+[100%] Built target test_runtime_guardrails

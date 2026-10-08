@@ -1,0 +1,7 @@
+Inspecting: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix
+PASS pinocchio CMake config: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix/lib/cmake/pinocchio/pinocchioConfig.cmake
+PASS Pinocchio core library: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix/lib/libpinocchio_default.so
+PASS Eigen CMake config: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix/share/eigen3/cmake/Eigen3Config.cmake
+PASS tinyxml2 CMake config: /mnt/data/pinocchio-4.1.0-prefix/cmeel.prefix/lib/cmake/tinyxml2/tinyxml2-config.cmake
+INFO urdfdom headers absent; v1.0 uses tinyxml2 + Pinocchio model construction and does not compile Pinocchio's URDF parser.
+RESULT: prefix is sufficient for the v1.0 full build.

@@ -1,0 +1,18 @@
+[1/5] Model loaded: dof=6, full inertial parameters=60
+      worst regressor identity relative error over 100 states = 4.364824e-16
+[2/5] Generating deterministic multi-sine identification dataset...
+      samples=3591, stacked W=21546x60
+[3/5] Solving scaled truncated-SVD least squares...
+      numerical rank=36/60, scaled condition number=21.7029, train RMSE=0.2004 Nm
+[4/5] Validating torque prediction on an unseen trajectory...
+      identified overall RMSE=0.00609813 Nm, NRMSE=0.0205784%
+      nominal    overall RMSE=0.665344 Nm, NRMSE=2.24523%
+[5/5] Closed-loop tracking with true plant (ABA), 1 ms simulation step...
+      pd_only: overall RMSE=15.0249 deg, max=48.9435 deg, saturation=0%, peak effort ratio=0.571327, min joint-limit margin=1.68825 rad, peak velocity ratio=0.923497
+      ct_nominal: overall RMSE=0.700883 deg, max=4.64246 deg, saturation=0%, peak effort ratio=0.437211, min joint-limit margin=1.79659 rad, peak velocity ratio=0.18155
+      ct_identified: overall RMSE=0.362134 deg, max=4.6442 deg, saturation=0%, peak effort ratio=0.438759, min joint-limit margin=1.81342 rad, peak velocity ratio=0.180901
+
+MVP acceptance:
+  A0 RNEA/regressor identity: PASS
+  A1 unseen-trajectory torque NRMSE < 5%: PASS
+  A2 identified CTC beats mismatched CTC and RMSE < 1 deg: PASS

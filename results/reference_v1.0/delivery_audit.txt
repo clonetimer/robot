@@ -1,0 +1,5 @@
+DELIVERY AUDIT PASS
+  documents: 13
+  reference artifacts: 14
+  local markdown links checked: 5
+  SHA-256 entries verified: 27

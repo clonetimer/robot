@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot name="aeroarm6">
+  <!--
+    Generic fixed-base 6R manipulator created for this identification project.
+    It intentionally uses no meshes/transmissions so the project remains dynamics-only.
+  -->
+  <link name="base_link"/>
+
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0.10" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.8" upper="2.8" effort="160" velocity="2.0"/>
+  </joint>
+  <link name="link1">
+    <inertial>
+      <origin xyz="0 0 0.06" rpy="0 0 0"/>
+      <mass value="4.5"/>
+      <inertia ixx="0.00915" ixy="0" ixz="0" iyy="0.00915" iyz="0" izz="0.00750"/>
+    </inertial>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0.12" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.6" upper="2.6" effort="160" velocity="2.0"/>
+  </joint>
+  <link name="link2">
+    <inertial>
+      <origin xyz="0.16 0 0" rpy="0 0 0"/>
+      <mass value="6.0"/>
+      <inertia ixx="0.00640" ixy="0" ixz="0" iyy="0.05440" iyz="0" izz="0.05440"/>
+    </inertial>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0.32 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.6" upper="2.6" effort="120" velocity="2.2"/>
+  </joint>
+  <link name="link3">
+    <inertial>
+      <origin xyz="0.14 0 0" rpy="0 0 0"/>
+      <mass value="4.0"/>
+      <inertia ixx="0.0032666667" ixy="0" ixz="0" iyy="0.0277666667" iyz="0" izz="0.0277666667"/>
+    </inertial>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0.28 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.0" upper="3.0" effort="70" velocity="2.8"/>
+  </joint>
+  <link name="link4">
+    <inertial>
+      <origin xyz="0.05 0 0" rpy="0 0 0"/>
+      <!-- Lumped effective wrist-link inertia; chosen to keep the synthetic plant
+           dynamically consistent with the frozen torque-noise and effort scales. -->
+      <mass value="3.0"/>
+      <inertia ixx="0.100" ixy="0" ixz="0" iyy="0.150" iyz="0" izz="0.150"/>
+    </inertial>
+  </link>
+
+  <joint name="joint5" type="revolute">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0.10 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.8" upper="2.8" effort="45" velocity="3.0"/>
+  </joint>
+  <link name="link5">
+    <inertial>
+      <origin xyz="0.04 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.060" ixy="0" ixz="0" iyy="0.080" iyz="0" izz="0.080"/>
+    </inertial>
+  </link>
+
+  <joint name="joint6" type="revolute">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <origin xyz="0.08 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.0" upper="3.0" effort="30" velocity="3.2"/>
+  </joint>
+  <link name="link6">
+    <inertial>
+      <origin xyz="0.03 0 0" rpy="0 0 0"/>
+      <mass value="1.5"/>
+      <inertia ixx="0.040" ixy="0" ixz="0" iyy="0.050" iyz="0" izz="0.050"/>
+    </inertial>
+  </link>
+</robot>
